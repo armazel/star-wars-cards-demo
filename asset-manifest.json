@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/star-wars-cards-demo/static/css/main.80564c81.css",
-    "main.js": "/star-wars-cards-demo/static/js/main.17fb552f.js",
+    "main.js": "/star-wars-cards-demo/static/js/main.e1552014.js",
     "static/media/layout_background.jpeg": "/star-wars-cards-demo/static/media/layout_background.bfc317526cabb6753916.jpeg",
     "static/media/not_found_404.svg": "/star-wars-cards-demo/static/media/not_found_404.7c82ba6da1cc5add6f817542da33d3b1.svg",
     "index.html": "/star-wars-cards-demo/index.html",
     "main.80564c81.css.map": "/star-wars-cards-demo/static/css/main.80564c81.css.map",
-    "main.17fb552f.js.map": "/star-wars-cards-demo/static/js/main.17fb552f.js.map"
+    "main.e1552014.js.map": "/star-wars-cards-demo/static/js/main.e1552014.js.map"
   },
   "entrypoints": [
     "static/css/main.80564c81.css",
-    "static/js/main.17fb552f.js"
+    "static/js/main.e1552014.js"
   ]
 }
