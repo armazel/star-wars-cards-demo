@@ -44,7 +44,7 @@ const StarShipsDetailsEdit: React.FC = () => {
         localStorageService.setItem<StarShipsData>(cardTypes.STAR_SHIPS, id as string, e.formData);
         dispatch(starShipDataUpdate());
 
-        navigate(`/${cardTypes.STAR_SHIPS}/${id}`);
+        navigate(`${process.env.PUBLIC_URL}/${cardTypes.STAR_SHIPS}/${id}`);
     };
 
     return (

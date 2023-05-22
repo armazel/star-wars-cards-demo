@@ -44,7 +44,7 @@ const PlanetsDetailsEdit: React.FC = () => {
         localStorageService.setItem<PlanetsData>(cardTypes.PLANETS, id as string, e.formData);
         dispatch(planetDataUpdate());
 
-        navigate(`/${cardTypes.PLANETS}/${id}`);
+        navigate(`${process.env.PUBLIC_URL}/${cardTypes.PLANETS}/${id}`);
     };
 
     return (

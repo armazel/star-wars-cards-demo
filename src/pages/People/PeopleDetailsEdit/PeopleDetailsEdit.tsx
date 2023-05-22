@@ -43,7 +43,7 @@ const PeopleDetailsEdit: React.FC = () => {
         localStorageService.setItem<PeopleData>(cardTypes.PEOPLE, id as string, e.formData);
         dispatch(peopleDataUpdate());
 
-        navigate(`/${cardTypes.PEOPLE}/${id}`);
+        navigate(`${process.env.PUBLIC_URL}/${cardTypes.PEOPLE}/${id}`);
     };
 
     return (

@@ -29,7 +29,7 @@ const Details: React.FC<
             <DetailsCard
                 title={<DetailsTitle 
                     name={data?.name as string} 
-                    path={`/${cardType}/${id}/edit`} 
+                    path={`${process.env.PUBLIC_URL}/${cardType}/${id}/edit`} 
                 />}
                 cardInfo={data as CardData}
                 imgSrc={`${getItemImage(entity, id)}`}
