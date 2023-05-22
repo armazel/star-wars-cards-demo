@@ -14,7 +14,7 @@ if (rootElement) {
   const root = ReactDOM.createRoot(rootElement);
   root.render(
       <Provider store={store}>
-        <BrowserRouter>
+        <BrowserRouter basename="/star-wars-cards-demo">
           <App />
         </BrowserRouter>
       </Provider>,
