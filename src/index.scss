@@ -1,0 +1,49 @@
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+@import "Global.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Star Wars', sans-serif;
+  color: $main-color !important;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('../public/layout_background.jpeg');
+  background-size: cover;
+  background-position: center center;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+
+input:focus {
+  outline: $main-color !important;
+}
+
+.ant-layout {
+  background-color: transparent !important;
+}
+
+.ant-input::placeholder,
+.ant-input,
+.ant-pagination-item,
+.ant-typography {
+  font-family: 'Star Wars', sans-serif;
+  color: $main-color !important;
+}
+
+.ant-layout-content,
+.ant-layout-header {
+  background-color: transparent !important;
+  height: auto;
+}

@@ -1,13 +1,11 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
+
 import ReactDOM from "react-dom/client";
+import "./index.scss";
+import App from "./App";
 import { Provider } from "react-redux";
 import store from "./store/store";
-
-import App from "./App";
-
-
-import "./index.scss";
 
 const rootElement = document.getElementById("root");
 if (rootElement) {
