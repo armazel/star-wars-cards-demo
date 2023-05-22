@@ -23,12 +23,12 @@ const componentName = "Content";
 
 const Content: React.FC = () => {
     const DefaultView = () => (
-        <>
+        <React.Fragment>
             <PeopleControls />
             <Row>
                 <PeoplePage />
             </Row>
-        </>
+        </React.Fragment>
     );
     return (
         <Layout.Content>
@@ -39,20 +39,20 @@ const Content: React.FC = () => {
                             <Route path={routesList.DEFAULT} element={<DefaultView />} />
                             <Route path={routesList.PEOPLE} element={<DefaultView />} />
                             <Route path={routesList.STAR_SHIPS} element={
-                                <>
+                                <React.Fragment>
                                     <StarShipsControls />
                                     <Col span={24}>
                                         <StarShipsPage />
                                     </Col>
-                                </>
+                                </React.Fragment>
                             } />
                             <Route path={routesList.PLANETS} element={
-                                <>
+                                <React.Fragment>
                                     <PlanetsControls />
                                     <Col span={24}>
                                         <PlanetsPage />
                                     </Col>
-                                </>
+                                </React.Fragment>
                             } />
                         </Routes>
                     </Col>

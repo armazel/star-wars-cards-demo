@@ -48,7 +48,7 @@ const PlanetsDetailsEdit: React.FC = () => {
     };
 
     return (
-        <>
+        <React.Fragment>
             <BreadCrumbs />
             <div className={componentName}>
                 <Title>
@@ -62,7 +62,7 @@ const PlanetsDetailsEdit: React.FC = () => {
                     validator={validator}
                 />
             </div>
-        </>
+        </React.Fragment>
     );
 };
 

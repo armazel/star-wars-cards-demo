@@ -31,7 +31,7 @@ const StarShipsDetails: React.FC = () => {
 
     return data 
         ? (
-            <>
+            <React.Fragment>
                 <BreadCrumbs />
                 <Details 
                     data={updateCardDetailsData(data as CardData, configRender.requiredFields)}
@@ -39,7 +39,7 @@ const StarShipsDetails: React.FC = () => {
                     id={data.id as string}
                     cardType={cardTypes.STAR_SHIPS}
                 />
-            </>
+            </React.Fragment>
         ) : (<EmptyPage />);
 };
 

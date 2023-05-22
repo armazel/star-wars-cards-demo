@@ -47,7 +47,7 @@ const PeopleDetailsEdit: React.FC = () => {
     };
 
     return (
-        <>
+        <React.Fragment>
             <BreadCrumbs />
             <div className={componentName}>
                 <Title>
@@ -61,7 +61,7 @@ const PeopleDetailsEdit: React.FC = () => {
                     validator={validator}
                 />
             </div>
-        </>
+        </React.Fragment>
     );
 };
 

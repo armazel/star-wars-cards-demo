@@ -28,13 +28,13 @@ const DetailsCard: React.FC<CardParams> = ({
 
     const renderData = (data: CardData) => {
         return (
-            <>
+            <React.Fragment>
                 {
                     Object.keys(cardInfo)?.map((item) => (
                         <p key={`${item}`}>{`${item}: ${data[item as keyof CardData]}`}</p>
                     ))
                 }
-            </>
+            </React.Fragment>
         );
     };
 

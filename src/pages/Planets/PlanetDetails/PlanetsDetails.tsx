@@ -32,7 +32,7 @@ const PlanetsDetails: React.FC = () => {
 
     return data 
         ? (
-            <>
+            <React.Fragment>
                 <BreadCrumbs />
                 <Details 
                     data={updateCardDetailsData(data as CardData, configRender.requiredFields)}
@@ -40,7 +40,7 @@ const PlanetsDetails: React.FC = () => {
                     id={data.id as string}
                     cardType={cardTypes.PLANETS}
                 />
-            </>
+            </React.Fragment>
         ) : (<EmptyPage />);
 };
 
